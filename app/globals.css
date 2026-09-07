@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #b89c02;
+}
+
+.bg-primary {
+  background-color: var(--foreground);
+}
+
+.border-primary {
+  border: 1px solid var(--foreground);
+}
+
+.text-primary {
+  color: var(--foreground);
+}
+
+.active {
+  cursor: pointer;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--foreground);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.active:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes slideRight {
+  from {
+    border-bottom: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    border-bottom: 2px solid var(--foreground);
+    transform: translateX(0);
+  }
+}
+

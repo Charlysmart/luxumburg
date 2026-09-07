@@ -1,0 +1,450 @@
+{
+  "hotel": {
+    "id": "HDL-EN-001",
+    "name": "Hotel De Luxumberg",
+    "slug": "hotel-de-luxumberg",
+    "description": "Hotel De Luxumberg is a premium luxury hotel in Enugu, Nigeria, offering elegant rooms, modern facilities, exceptional hospitality, and a relaxing environment for business and leisure travelers.",
+    "shortDescription": "A luxurious stay in the heart of Enugu.",
+    "category": "Luxury Hotel",
+    "starRating": 5,
+    "guestRating": 4.8,
+    "reviewCount": 324,
+    "status": "active",
+
+    "location": {
+      "address": "12 Independence Layout Avenue",
+      "area": "Independence Layout",
+      "city": "Enugu",
+      "state": "Enugu State",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "postalCode": "400271",
+      "latitude": 6.4281,
+      "longitude": 7.4951,
+      "landmark": "Near Enugu State Government House"
+    },
+
+    "contact": {
+      "phone": "+234 803 000 0000",
+      "alternatePhone": "+234 806 000 0000",
+      "email": "reservations@hoteldeluxumberg.com",
+      "website": "https://www.hoteldeluxumberg.com"
+    },
+
+    "checkIn": {
+      "time": "14:00",
+      "instructions": "Guests are required to present a valid means of identification at check-in."
+    },
+
+    "checkOut": {
+      "time": "12:00",
+      "instructions": "Late checkout is subject to availability and may attract an additional fee."
+    },
+
+    "policies": {
+      "smoking": "Smoking is not permitted inside rooms.",
+      "pets": "Pets are not allowed.",
+      "children": "Children are welcome.",
+      "parties": "Parties and events require prior approval.",
+      "cancellation": "Free cancellation is available up to 48 hours before check-in.",
+      "paymentMethods": [
+        "Visa",
+        "Mastercard",
+        "Verve",
+        "Bank Transfer",
+        "Cash"
+      ]
+    },
+
+    "amenities": [
+      {
+        "id": "AM001",
+        "name": "Free Wi-Fi",
+        "icon": "wifi"
+      },
+      {
+        "id": "AM002",
+        "name": "Swimming Pool",
+        "icon": "waves"
+      },
+      {
+        "id": "AM003",
+        "name": "Fitness Center",
+        "icon": "dumbbell"
+      },
+      {
+        "id": "AM004",
+        "name": "Restaurant",
+        "icon": "utensils"
+      },
+      {
+        "id": "AM005",
+        "name": "Bar",
+        "icon": "wine"
+      },
+      {
+        "id": "AM006",
+        "name": "24-Hour Front Desk",
+        "icon": "clock"
+      },
+      {
+        "id": "AM007",
+        "name": "Room Service",
+        "icon": "concierge-bell"
+      },
+      {
+        "id": "AM008",
+        "name": "Airport Shuttle",
+        "icon": "car"
+      },
+      {
+        "id": "AM009",
+        "name": "Parking",
+        "icon": "parking"
+      },
+      {
+        "id": "AM010",
+        "name": "Air Conditioning",
+        "icon": "snowflake"
+      },
+      {
+        "id": "AM011",
+        "name": "Spa",
+        "icon": "spa"
+      },
+      {
+        "id": "AM012",
+        "name": "Conference Hall",
+        "icon": "presentation"
+      }
+    ],
+
+    "rooms": [
+      {
+        "id": "ROOM001",
+        "name": "Deluxe King Room",
+        "slug": "deluxe-king-room",
+        "description": "A spacious and elegantly furnished room featuring a king-size bed, modern bathroom, work desk, and relaxing city views.",
+        "size": "32 m²",
+        "bedType": "King Bed",
+        "maxGuests": 2,
+        "roomCount": 18,
+        "pricePerNight": 145000,
+        "currency": "NGN",
+        "availability": 12,
+        "rating": 4.7,
+        "features": [
+          "King-size bed",
+          "City view",
+          "Work desk",
+          "Smart TV",
+          "Mini refrigerator",
+          "Air conditioning",
+          "Private bathroom",
+          "Free Wi-Fi"
+        ],
+        "images": [
+          "deluxe-king-1.jpeg",
+          "deluxe-king-2.jpeg",
+          "deluxe-king-3.jpeg"
+        ]
+      },
+      {
+        "id": "ROOM002",
+        "name": "Executive Suite",
+        "slug": "executive-suite",
+        "description": "A sophisticated suite designed for business and leisure travelers, featuring a separate living area and premium amenities.",
+        "size": "48 m²",
+        "bedType": "King Bed",
+        "maxGuests": 3,
+        "roomCount": 10,
+        "pricePerNight": 220000,
+        "currency": "NGN",
+        "availability": 7,
+        "rating": 4.9,
+        "features": [
+          "King-size bed",
+          "Separate living room",
+          "Executive work desk",
+          "Smart TV",
+          "Mini bar",
+          "Coffee machine",
+          "Premium toiletries",
+          "Air conditioning",
+          "Free Wi-Fi"
+        ],
+        "images": [
+          "executive-suite-1.jpeg",
+          "executive-suite-2.jpeg",
+          "executive-suite-3.jpeg"
+        ]
+      },
+      {
+        "id": "ROOM003",
+        "name": "Presidential Suite",
+        "slug": "presidential-suite",
+        "description": "Our most luxurious accommodation, offering expansive living spaces, premium furnishings, a private lounge, and exceptional city views.",
+        "size": "85 m²",
+        "bedType": "King Bed",
+        "maxGuests": 4,
+        "roomCount": 2,
+        "pricePerNight": 450000,
+        "currency": "NGN",
+        "availability": 1,
+        "rating": 5.0,
+        "features": [
+          "Luxury king-size bed",
+          "Private lounge",
+          "Dining area",
+          "Large balcony",
+          "Panoramic city view",
+          "Premium minibar",
+          "Coffee machine",
+          "Jacuzzi",
+          "Smart TV",
+          "Premium toiletries",
+          "24-hour butler service",
+          "Free Wi-Fi"
+        ],
+        "images": [
+          "presidential-1.jpeg",
+          "presidential-2.jpeg",
+          "presidential-3.jpeg"
+        ]
+      },
+      {
+        "id": "ROOM004",
+        "name": "Premium Twin Room",
+        "slug": "premium-twin-room",
+        "description": "A comfortable and stylish room featuring two premium single beds, making it ideal for friends, colleagues, or small families.",
+        "size": "35 m²",
+        "bedType": "2 Single Beds",
+        "maxGuests": 2,
+        "roomCount": 14,
+        "pricePerNight": 155000,
+        "currency": "NGN",
+        "availability": 9,
+        "rating": 4.6,
+        "features": [
+          "Two single beds",
+          "City view",
+          "Smart TV",
+          "Work desk",
+          "Mini refrigerator",
+          "Air conditioning",
+          "Private bathroom",
+          "Free Wi-Fi"
+        ],
+        "images": [
+          "premium-twin-1.jpeg",
+          "premium-twin-2.jpeg"
+        ]
+      },
+      {
+        "id": "ROOM005",
+        "name": "Family Suite",
+        "slug": "family-suite",
+        "description": "A spacious family-friendly suite with separate sleeping and living areas, designed to provide comfort for families traveling together.",
+        "size": "60 m²",
+        "bedType": "King Bed + Sofa Bed",
+        "maxGuests": 5,
+        "roomCount": 6,
+        "pricePerNight": 280000,
+        "currency": "NGN",
+        "availability": 4,
+        "rating": 4.8,
+        "features": [
+          "King-size bed",
+          "Sofa bed",
+          "Separate living room",
+          "Dining area",
+          "Smart TV",
+          "Mini refrigerator",
+          "Bathtub",
+          "Air conditioning",
+          "Free Wi-Fi"
+        ],
+        "images": [
+          "family-suite-1.jpeg",
+          "family-suite-2.jpeg"
+        ]
+      }
+    ],
+
+    "restaurants": [
+      {
+        "id": "REST001",
+        "name": "Luxumberg Signature Restaurant",
+        "description": "An elegant all-day dining restaurant serving Nigerian, African, and international cuisine.",
+        "cuisine": [
+          "Nigerian",
+          "African",
+          "International"
+        ],
+        "openingHours": "06:30 - 23:00",
+        "location": "Ground Floor"
+      },
+      {
+        "id": "REST002",
+        "name": "The Grand Lounge",
+        "description": "A sophisticated lounge offering premium drinks, coffee, light meals, and evening entertainment.",
+        "cuisine": [
+          "Continental",
+          "Light Meals"
+        ],
+        "openingHours": "10:00 - 00:00",
+        "location": "Lobby Level"
+      }
+    ],
+
+    "facilities": [
+      {
+        "id": "FAC001",
+        "name": "Outdoor Swimming Pool",
+        "description": "A temperature-controlled outdoor swimming pool surrounded by comfortable lounge chairs.",
+        "openingHours": "07:00 - 21:00"
+      },
+      {
+        "id": "FAC002",
+        "name": "Luxumberg Spa",
+        "description": "A relaxing spa offering massages, facial treatments, body treatments, and wellness services.",
+        "openingHours": "09:00 - 20:00"
+      },
+      {
+        "id": "FAC003",
+        "name": "Fitness Center",
+        "description": "A modern gym equipped with cardio machines, strength equipment, and free weights.",
+        "openingHours": "24 Hours"
+      },
+      {
+        "id": "FAC004",
+        "name": "Grand Conference Hall",
+        "description": "A premium event and conference facility suitable for corporate meetings, weddings, seminars, and conferences.",
+        "capacity": 350,
+        "openingHours": "08:00 - 22:00"
+      }
+    ],
+
+    "services": [
+      {
+        "id": "SERV001",
+        "name": "24-Hour Room Service",
+        "price": "Varies"
+      },
+      {
+        "id": "SERV002",
+        "name": "Airport Transfer",
+        "price": 35000,
+        "currency": "NGN"
+      },
+      {
+        "id": "SERV003",
+        "name": "Laundry Service",
+        "price": "Varies"
+      },
+      {
+        "id": "SERV004",
+        "name": "Car Rental",
+        "price": "From 45000 NGN/day"
+      },
+      {
+        "id": "SERV005",
+        "name": "Concierge Service",
+        "price": "Complimentary"
+      }
+    ],
+
+    "reviews": [
+      {
+        "id": "REV001",
+        "guestName": "Chinedu Okafor",
+        "rating": 5,
+        "title": "Excellent experience",
+        "comment": "The room was beautiful, clean, and very comfortable. The staff were extremely professional.",
+        "date": "2026-08-15"
+      },
+      {
+        "id": "REV002",
+        "guestName": "Amaka Nwosu",
+        "rating": 5,
+        "title": "Beautiful hotel",
+        "comment": "One of the best hotel experiences I have had in Enugu. The food and service were excellent.",
+        "date": "2026-08-02"
+      },
+      {
+        "id": "REV003",
+        "guestName": "Daniel Eze",
+        "rating": 4,
+        "title": "Great business stay",
+        "comment": "Very comfortable environment with reliable Wi-Fi and a good workspace.",
+        "date": "2026-07-24"
+      }
+    ],
+
+    "images": {
+      "cover": {
+        "image": "/images/hotel/hotel-cover.jpeg",
+        "category": "Exterior"
+      },
+      "gallery": [
+        {
+          "image": "/images/hotel/exterior.jpeg",
+          "category": "Exterior"
+        },
+        {
+          "image": "/images/hotel/lobby.jpeg",
+          "category": "Lobby"
+        },
+        {
+          "image": "/images/hotel/pool.jpeg",
+          "category": "Swimming Pool"
+        },
+        {
+          "image": "/images/hotel/restaurant.jpeg",
+          "category": "Restaurant"
+        },
+        {
+          "image": "/images/hotel/spa.jpeg",
+          "category": "Spa"
+        },
+        {
+          "image": "/images/hotel/gym.jpeg",
+          "category": "Fitness Center"
+        },
+        {
+          "image": "/images/hotel/conference.jpeg",
+          "category": "Conference Hall"
+        }
+      ]
+    },
+
+    "nearbyPlaces": [
+      {
+        "name": "Enugu State Government House",
+        "distance": "1.2 km"
+      },
+      {
+        "name": "Nnamdi Azikiwe Stadium",
+        "distance": "3.5 km"
+      },
+      {
+        "name": "Polo Park Mall",
+        "distance": "4.1 km"
+      },
+      {
+        "name": "Enugu International Airport",
+        "distance": "8.7 km"
+      }
+    ],
+
+    "booking": {
+      "minimumStay": 1,
+      "maximumStay": 30,
+      "currency": "NGN",
+      "taxRate": 7.5,
+      "serviceChargeRate": 5,
+      "instantBooking": true,
+      "requiresIdentification": true
+    }
+  }
+}
