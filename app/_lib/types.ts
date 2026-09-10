@@ -13,3 +13,19 @@ type RoomProp = {
     features: string[],
     images: string[]
 }
+
+type GalleryProp = {
+    image: string,
+    category: string
+}
+
+type BlogProp = {
+    "id": string,
+      "slug": "discover-the-beauty-of-enugu",
+      "title": string,
+      "category": string,
+      "publishedAt": string,
+      "image": string,
+      "content": string,
+      "tags": string[]
+}

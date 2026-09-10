@@ -381,42 +381,56 @@
       }
     ],
 
-    "images": {
-      "cover": {
-        "image": "/images/hotel/hotel-cover.jpeg",
+    "images": [
+      {
+        "image": "Hotel_lounge_and_bar_interior.jpeg",
+        "category": "Lounge"
+      },
+      {
+        "image": "Hotel_building_exterior_design.jpeg",
         "category": "Exterior"
       },
-      "gallery": [
-        {
-          "image": "/images/hotel/exterior.jpeg",
-          "category": "Exterior"
-        },
-        {
-          "image": "/images/hotel/lobby.jpeg",
-          "category": "Lobby"
-        },
-        {
-          "image": "/images/hotel/pool.jpeg",
-          "category": "Swimming Pool"
-        },
-        {
-          "image": "/images/hotel/restaurant.jpeg",
-          "category": "Restaurant"
-        },
-        {
-          "image": "/images/hotel/spa.jpeg",
-          "category": "Spa"
-        },
-        {
-          "image": "/images/hotel/gym.jpeg",
-          "category": "Fitness Center"
-        },
-        {
-          "image": "/images/hotel/conference.jpeg",
-          "category": "Conference Hall"
-        }
-      ]
-    },
+      {
+        "image": "hotel-entrance.jpeg",
+        "category": "Exterior"
+      },
+      {
+        "image": "Hotel_lounge_and_bar_interior_2.jpeg",
+        "category": "Lounge"
+      },
+      {
+        "image": "Hotel_lobby_interior_design_2.jpeg",
+        "category": "Lobby"
+      },
+      {
+        "image": "Hotel_lobby_interior_design.jpeg",
+        "category": "Lobby"
+      },
+      {
+        "image": "Swimming_pool_at_luxury_hotel.jpeg",
+        "category": "Swimming Pool"
+      },
+      {
+        "image": "Swimming_pool_at_luxury_hotel_2.jpeg",
+        "category": "Swimming Pool"
+      },
+      {
+        "image": "Swimming_pool_at_luxury_hotel_3.jpeg",
+        "category": "Swimming Pool"
+      },
+      {
+        "image": "Restaurant_interior_design_in_Enugu.jpeg",
+        "category": "Restaurant"
+      },
+      {
+        "image": "Spa_reception_and_relaxation_area.jpeg",
+        "category": "Spa"
+      },
+      {
+        "image": "Modern_fitness_center_interior_view.jpeg",
+        "category": "Fitness Center"
+      }
+    ],
 
     "nearbyPlaces": [
       {

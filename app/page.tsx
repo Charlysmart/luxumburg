@@ -1,17 +1,25 @@
 import Image from "next/image";
 import Button from "./components/button";
 import Slider from "./components/slider";
-import { BedDouble, Star, User } from "lucide-react";
+import { BedDouble, Section, Star, User } from "lucide-react";
+import Gallery from "./components/gallery";
 
 export default async function Home() {
   const data = await fetch("http://localhost:3000/data/hotelDetails.json");
-  const hotelData = await data.json()
+  const blogData = await fetch("http://localhost:3000/data/blog.json");
+  const hotelData = await data.json();
+  const blogResponse = await blogData.json();
   const { rooms } : { rooms: RoomProp[]} = hotelData.hotel;
+  const { blogs } : { blogs: BlogProp[] } = blogResponse;
   return (
     <main className="font-san text-gray-700 space-y-20 mb-20">
+
+      {/* Slider Section */}
       <section className="h-[calc(100vh-80px)] relative">
         <Slider />
       </section>
+
+      {/* About Our Hotel Section */}
       <section className="w-full h-fit px-5 flex justify-between">
         <section className="w-[48%] relative">
           <Image src="/images/Luxurious_modern_hotel_lobby_int…_2K_202609061634.jpeg" alt="Exterior view of the hotel" fill />
@@ -28,10 +36,12 @@ export default async function Home() {
           <Button label="Explore Our Rooms" />
         </section>
       </section>
+
+      {/* Available Rooms Section */}
       <section className="w-full px-5">
         <div className="text-center flex flex-col items-center space-y-5 mb-20">
           <p className="text-primary tracking-wide">Enjoy a World-Class Stay Experience</p>
-          <h2 className="font-serif text-5xl tracking-wider">Designed for Comfort, Crafted for Relaxation</h2>
+          <h2 className="font-serif text-4xl tracking-wider uppercase">Designed for Comfort, Crafted for Relaxation</h2>
           <p className="w-[60%]">
             At Luxemburg Hotel, every room and suite is thoughtfully designed to provide the perfect balance of luxury, comfort, and relaxation. Enjoy elegant interiors, premium bedding, modern furnishings, high-speed Wi-Fi, smart entertainment systems, and carefully selected amenities tailored to make your stay exceptional.
             Whether you're visiting for business or leisure, our beautifully appointed accommodations provide a peaceful retreat where you can unwind, recharge, and enjoy the finest in modern hospitality.
@@ -62,6 +72,8 @@ export default async function Home() {
           <Button label="View More Rooms" />
         </section>
       </section>
+
+      {/* Testimonial Section */}
       <section className="h-100 px-2">
         <div className="w-full h-full rounded-2xl relative overflow-hidden">
           <Image src="/images/reception.jpeg" alt="Exterior view of the hotel" fill className="object-cover" />
@@ -84,6 +96,49 @@ export default async function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section>
+        <section className="text-center flex flex-col items-center space-y-5 mb-20">
+          <p className="text-primary tracking-wide">All the Essentials for a Cozy and Comfortable Stay in Enugu.</p>
+          <h2 className="font-serif text-4xl tracking-wider">HOTEL FACILITIES</h2>
+          <p className="w-[60%]">
+            From premium rooms to full-service amenities, our team ensures a comfortable and memorable stay from check-in to check-out.
+          </p>
+        </section>
+        <section>
+          <Gallery />
+        </section>
+      </section>
+
+      {/* Trusted Clients */}
+      <section className="text-center flex flex-col items-center space-y-5 mb-20">
+        <p className="text-primary tracking-wide">Trusted by Guests, Business & Organizations</p>
+        <h2 className="font-serif text-4xl tracking-wider">OUR CLIENTS</h2>
+        <p className="w-[60%]">
+          Whether hosting business meetings, accommodating corporate teams, organizing special events, or providing relaxing getaways, we are dedicated to building lasting relationships founded on trust, excellence, and genuine hospitality.
+        </p>
+      </section>
+
+      {/* Blog Section */}
+      <section className="text-center flex flex-col items-center space-y-5 mb-20">
+        <p className="text-primary tracking-wide">Our Blog</p>
+        <h2 className="font-serif text-4xl tracking-wider">NEWS & ARTICLES</h2>
+
+        <section className="w-full flex flex-wrap gap-4 px-10">
+          {blogs.slice(0,3).map(blog => (
+            <div  className="w-[32.4%] space-y-4" key={blog.id}>
+              <div className="relative w-full h-80 shrink-0 rounded-2xl overflow-hidden">
+                <Image src={`/images/blog/${blog.image}`} alt={blog.title} fill />
+              </div>
+              <div className="space-y-4 text-left">
+                <h2 className="font-serif text-2xl">{blog.title}</h2>
+                <p>{`${blog.content.slice(0, 100)}...`}</p>
+              </div>
+            </div>
+          ))}
+        </section>
       </section>
     </main>
   );

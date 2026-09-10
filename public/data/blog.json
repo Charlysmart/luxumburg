@@ -1,0 +1,131 @@
+{
+  "blogs": [
+    {
+      "id": "BLOG001",
+      "slug": "discover-the-beauty-of-enugu",
+      "title": "Discover the Beauty of Enugu",
+      "category": "Travel",
+      "publishedAt": "2026-08-28",
+      "image": "Scenic_landscape_of_Enugu_hills_20260909223119.jpeg",
+      "content": "Enugu, known as the Coal City, is one of southeastern Nigeria's most fascinating destinations. From its rich cultural heritage to its beautiful landscapes and welcoming atmosphere, the city offers visitors a unique blend of relaxation, history, and adventure. Visitors can explore iconic locations, experience local cuisine, discover traditional crafts, and enjoy the city's growing collection of restaurants and entertainment destinations. Whether you are visiting for business or leisure, Enugu provides plenty of opportunities to create memorable experiences."
+      ,
+      "tags": [
+        "Enugu",
+        "Travel",
+        "Nigeria",
+        "Tourism"
+      ]
+    },
+    {
+      "id": "BLOG002",
+      "slug": "5-reasons-to-choose-a-luxury-hotel",
+      "title": "5 Reasons to Choose a Luxury Hotel for Your Next Trip",
+      "category": "Hospitality",
+      "publishedAt": "2026-08-22",
+      "image": "Luxury_hotel_room_weekend_getaway_20260909223146.jpeg",
+      "content": "Choosing the right hotel can have a major impact on your travel experience. Luxury hotels provide more than a comfortable bed. They combine thoughtful service, premium facilities, elegant surroundings, and personalized experiences. Guests can enjoy spacious rooms, fine dining, wellness facilities, swimming pools, concierge services, and convenient business facilities. For travelers who value comfort and convenience, choosing a luxury hotel can make every part of the journey more enjoyable."
+      ,
+      "tags": [
+        "Luxury",
+        "Hotels",
+        "Hospitality",
+        "Travel"
+      ]
+    },
+    {
+      "id": "BLOG003",
+      "slug": "a-guide-to-enugu-local-cuisine",
+      "title": "A Guide to Enugu's Local Cuisine",
+      "category": "Food & Dining",
+      "publishedAt": "2026-08-18",
+      "image": "Nigerian_cuisine_on_dining_table_20260909223149.jpeg",
+      "content": "Food is an important part of experiencing a new destination.Enugu offers visitors an opportunity to experience a wide range of southeastern Nigerian dishes prepared with fresh ingredients and traditional cooking techniques.Popular dishes include rich soups, rice dishes, yam-based meals, grilled meats, and a variety of locally inspired delicacies. For visitors staying in Enugu, exploring local cuisine is one of the easiest ways to connect with the culture of the region."
+      ,
+      "tags": [
+        "Food",
+        "Enugu",
+        "Nigerian Cuisine",
+        "Dining"
+      ]
+    },
+    {
+      "id": "BLOG004",
+      "slug": "how-to-plan-the-perfect-weekend-getaway",
+      "title": "How to Plan the Perfect Weekend Getaway",
+      "category": "Travel Tips",
+      "publishedAt": "2026-08-12",
+      "image": "Hotel_bedroom_interior_design_20260909223127.jpeg",
+      "content": "A weekend getaway does not have to involve complicated planning. Start by choosing a destination that offers a combination of relaxation, entertainment, and activities that match your interests. Book your accommodation early, create a simple itinerary, and leave enough free time to enjoy the destination without feeling rushed. A comfortable hotel can also serve as the perfect base for exploring the city while giving you a peaceful place to return to at the end of the day."
+      ,
+      "tags": [
+        "Travel Tips",
+        "Weekend",
+        "Getaway",
+        "Vacation"
+      ]
+    },
+    {
+      "id": "BLOG005",
+      "slug": "the-perfect-business-trip-to-enugu",
+      "title": "The Perfect Business Trip to Enugu",
+      "category": "Business Travel",
+      "publishedAt": "2026-08-06",
+      "image": "Hotel_business_workspace_with_la…_20260909223156.jpeg",
+      "content": "Business travel requires the right balance between productivity and comfort.When traveling to Enugu for work, choosing accommodation with reliable internet, comfortable workspaces, meeting facilities, and convenient transportation can make your trip significantly easier.After meetings and business activities, travelers should also have opportunities to relax and recharge. Hotel De Luxumberg provides a combination of business facilities and luxury amenities designed to support both productive workdays and comfortable evenings."
+      ,
+      "tags": [
+        "Business",
+        "Corporate Travel",
+        "Enugu",
+        "Work Travel"
+      ]
+    },
+    {
+      "id": "BLOG006",
+      "slug": "wellness-and-relaxation-at-de-luxumberg",
+      "title": "Wellness and Relaxation at Hotel De Luxumberg",
+      "category": "Wellness",
+      "image": "Luxury_hotel_spa_relaxation_area_20260909223153.jpeg",
+      "content": "Travel can be exciting, but it can also leave you feeling tired and overwhelmed. Taking time to relax during your stay can help you return home feeling refreshed. Guests can enjoy a combination of wellness experiences including spa treatments, swimming, fitness activities, and quiet relaxation areas. At Hotel De Luxumberg, wellness is designed to complement the overall guest experience and provide a peaceful escape from the demands of everyday life."
+      ,
+      "tags": [
+        "Wellness",
+        "Spa",
+        "Relaxation",
+        "Lifestyle"
+      ]
+    },
+    {
+      "id": "BLOG007",
+      "slug": "planning-a-memorable-event-in-enugu",
+      "title": "Planning a Memorable Event in Enugu",
+      "category": "Events",
+      "publishedAt": "2026-07-22",
+      "image": "Scenic_landscape_of_Enugu_hills_20260909223119.jpeg",
+      "content": "The right venue can make a significant difference when planning an event. A successful event requires careful attention to seating arrangements, catering, decoration, technology, parking, and guest comfort. Choosing a venue with experienced event staff and flexible facilities can make the planning process much easier. Hotel De Luxumberg offers event spaces suitable for corporate meetings, conferences, weddings, private celebrations, and other special occasions."
+        ,
+      "tags": [
+        "Events",
+        "Weddings",
+        "Conferences",
+        "Enugu"
+      ]
+    },
+    {
+      "id": "BLOG008",
+      "slug": "why-enugu-is-perfect-for-a-short-escape",
+      "title": "Why Enugu Is Perfect for a Short Escape",
+      "category": "Travel",
+      "publishedAt": "2026-07-15",
+      "image": "Scenic_landscape_of_Enugu_hills_20260909223119.jpeg",
+      "content": "You do not always need a long vacation to enjoy a change of scenery. A short stay in Enugu can provide the perfect opportunity to step away from your normal routine and explore somewhere new. The city's combination of culture, food, entertainment, nature, and hospitality makes it an attractive destination for short breaks. With comfortable accommodation and a well-planned itinerary, even a few days can become a memorable experience."
+      ,
+      "tags": [
+        "Enugu",
+        "Travel",
+        "Vacation",
+        "Getaway"
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #b89c02;
+  --hover: #b89c02;
 }
 
 .bg-primary {
@@ -11,6 +12,10 @@
 
 .border-primary {
   border: 1px solid var(--foreground);
+}
+
+.bg-hover {
+  background-color: var(--hover);
 }
 
 .text-primary {
