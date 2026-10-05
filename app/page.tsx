@@ -12,7 +12,7 @@ export default async function Home() {
   const { rooms } : { rooms: RoomProp[]} = hotelData.hotel;
   const { blogs } : { blogs: BlogProp[] } = blogResponse;
   return (
-    <main className="font-san text-gray-700 space-y-20 mb-20">
+    <main className="font-san text-gray-700 space-y-20 mb-20 w-full">
 
       {/* Slider Section */}
       <section className="h-[calc(100vh-80px)] relative">
@@ -20,13 +20,13 @@ export default async function Home() {
       </section>
 
       {/* About Our Hotel Section */}
-      <section className="w-full h-fit px-5 flex justify-between">
-        <section className="w-[48%] relative">
-          <Image src="/images/Luxurious_modern_hotel_lobby_int…_2K_202609061634.jpeg" alt="Exterior view of the hotel" fill />
+      <section className="w-full h-fit px-5 flex md:flex-row flex-col gap-y-10 items-center justify-between">
+        <section className="md:w-[48%] w-full md:h-100 h-50 relative">
+          <Image src="/images/Luxurious_modern_hotel_lobby_int…_2K_202609061634.jpeg" alt="Exterior view of the hotel" fill className="object-cover" />
         </section>
-        <section className="w-[48%] space-y-5">
+        <section className="md:w-[48%] w-full space-y-5">
           <p className="text-primary tracking-wide">De Luxumberg Hotel</p>
-          <h1 className="font-serif text-4xl tracking-wide">LUXURY HOTEL IN ENUGU</h1>
+          <h1 className="font-serif md:text-4xl text-2xl tracking-wide">LUXURY HOTEL IN ENUGU</h1>
           <p className="text-justify">
             Welcome to Luxemburg Hotel, a premier luxury destination designed to offer an exceptional blend of comfort, elegance, and modern hospitality. Strategically positioned to provide guests with a relaxing and memorable stay, our hotel is an ideal choice for both business and leisure travelers.
             At Luxemburg Hotel, we are committed to delivering world-class hospitality through our professional and dedicated team. From beautifully designed accommodations and modern business facilities to exceptional leisure amenities, every detail is thoughtfully designed with your comfort in mind.
@@ -38,11 +38,11 @@ export default async function Home() {
       </section>
 
       {/* Available Rooms Section */}
-      <section className="w-full px-5">
+      <section className="w-full md:px-5 px-2">
         <div className="text-center flex flex-col items-center space-y-5 mb-20">
           <p className="text-primary tracking-wide">Enjoy a World-Class Stay Experience</p>
-          <h2 className="font-serif text-4xl tracking-wider uppercase">Designed for Comfort, Crafted for Relaxation</h2>
-          <p className="w-[60%]">
+          <h2 className="font-serif md:text-4xl text-xl tracking-wider uppercase">Designed for Comfort, Crafted for Relaxation</h2>
+          <p className="lg:w-[60%] md:w-[80%] md:text-[16px] text-[14px]">
             At Luxemburg Hotel, every room and suite is thoughtfully designed to provide the perfect balance of luxury, comfort, and relaxation. Enjoy elegant interiors, premium bedding, modern furnishings, high-speed Wi-Fi, smart entertainment systems, and carefully selected amenities tailored to make your stay exceptional.
             Whether you're visiting for business or leisure, our beautifully appointed accommodations provide a peaceful retreat where you can unwind, recharge, and enjoy the finest in modern hospitality.
           </p>
@@ -50,19 +50,19 @@ export default async function Home() {
         <section className="flex flex-wrap gap-y-3 gap-x-[4%] mb-10">
           {
             rooms.slice(0, 4).map(room => (
-              <article key={room.id} className="w-[48%]">
-                <div className=" h-100 shrink-0 relative rounded-2xl overflow-hidden">
-                      <Image src={`/images/rooms/${room.images[0]}`} alt={room.name} fill className="transform scale-100 hover:scale-105 duration-300 ease-in-out" />
+              <article key={room.id} className="md:w-[48%] w-full">
+                <div className="lg:h-100 h-80 shrink-0 relative rounded-2xl overflow-hidden">
+                      <Image src={`/images/rooms/${room.images[0]}`} alt={room.name} fill className="transform scale-100 hover:scale-105 duration-300 ease-in-out object-cover" />
                 </div>
                 <section className="py-5">
-                  <div className="flex justify-between mb-2">
-                    <div className="flex gap-5">
+                  <div className="flex justify-between items-center mb-2">
+                    <div className="flex gap-5 lg:text-[16px] text-[12px]">
                       <p className="flex gap-1"><User /> {room.maxGuests} Guests</p>
                       <p className="flex gap-1"><BedDouble /> {room.bedType} Bed</p>
                     </div>
                     <p className="font-semibold"><span className="font-semibold text-gray-800 font-serif text-xl">₦{room.pricePerNight}</span>/night</p>
                   </div>
-                  <p className="font-serif tracking-wider text-2xl text-gray-800">{room.name.toUpperCase()}</p>
+                  <p className="font-serif tracking-wider md:text-2xl text-gray-800">{room.name.toUpperCase()}</p>
                 </section>
               </article>
             ))
@@ -78,8 +78,8 @@ export default async function Home() {
         <div className="w-full h-full rounded-2xl relative overflow-hidden">
           <Image src="/images/reception.jpeg" alt="Exterior view of the hotel" fill className="object-cover" />
           <div className="w-full h-full absolute top-0 left-0 bg-black opacity-60 border" />
-          <div className="text-white w-full h-full absolute top-0 left-0 flex items-center">
-            <div className="space-y-5 w-[50%] flex flex-col items-center">
+          <div className="text-white w-full h-full gap-y-5 absolute top-0 left-0 flex md:flex-row flex-col items-center">
+            <div className="space-y-5 md:w-[50%] w-full flex flex-col items-center">
               <p className="font-serif text-7xl">4.3</p>
               <div className="flex">
                 {[1, 2, 3, 4, 5].map((star, index) => (
@@ -88,8 +88,8 @@ export default async function Home() {
               </div>
               <p>(1,000+ Reviews)</p>
             </div>
-            <div className="w-[50%] space-y-4">
-              <p className="text-lg font-medium">
+            <div className=" md:w-[50%] w-full px-2 md:text-[16px] text-center text-[14px] space-y-4">
+              <p className="text-lg md:font-medium">
                 The room was beautiful, clean, and very comfortable. The staff were extremely professional. One of the best hotel experiences I have had in Enugu. The food and service were excellent.
               </p>
               <p className="font-semibold text-lg">Amaka Nwosu</p>
@@ -103,7 +103,7 @@ export default async function Home() {
         <section className="text-center flex flex-col items-center space-y-5 mb-20">
           <p className="text-primary tracking-wide">All the Essentials for a Cozy and Comfortable Stay in Enugu.</p>
           <h2 className="font-serif text-4xl tracking-wider">HOTEL FACILITIES</h2>
-          <p className="w-[60%]">
+          <p className="md:w-[60%] w-[90%]">
             From premium rooms to full-service amenities, our team ensures a comfortable and memorable stay from check-in to check-out.
           </p>
         </section>
@@ -116,7 +116,7 @@ export default async function Home() {
       <section className="text-center flex flex-col items-center space-y-5 mb-20">
         <p className="text-primary tracking-wide">Trusted by Guests, Business & Organizations</p>
         <h2 className="font-serif text-4xl tracking-wider">OUR CLIENTS</h2>
-        <p className="w-[60%]">
+        <p className="md:w-[60%] w-full">
           Whether hosting business meetings, accommodating corporate teams, organizing special events, or providing relaxing getaways, we are dedicated to building lasting relationships founded on trust, excellence, and genuine hospitality.
         </p>
       </section>
@@ -126,11 +126,11 @@ export default async function Home() {
         <p className="text-primary tracking-wide">Our Blog</p>
         <h2 className="font-serif text-4xl tracking-wider">NEWS & ARTICLES</h2>
 
-        <section className="w-full flex flex-wrap gap-4 px-10">
+        <section className="w-full flex flex-wrap gap-4 lg:px-10 px-5">
           {blogs.slice(0,3).map(blog => (
-            <div  className="w-[32.4%] space-y-4" key={blog.id}>
+            <div  className="lg:w-[32.4%] md:w-[48%] w-full space-y-4" key={blog.id}>
               <div className="relative w-full h-80 shrink-0 rounded-2xl overflow-hidden">
-                <Image src={`/images/blog/${blog.image}`} alt={blog.title} fill />
+                <Image src={`/images/blog/${blog.image}`} alt={blog.title} fill className="object-cover" />
               </div>
               <div className="space-y-4 text-left">
                 <h2 className="font-serif text-2xl">{blog.title}</h2>

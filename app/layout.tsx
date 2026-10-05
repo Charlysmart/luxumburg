@@ -20,8 +20,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <Header />
+      <body className="min-h-full flex flex-col overflow-x-hidden">
+        <div className="sticky top-0 bg-white z-100">
+          <Header />
+        </div>
         {children}
         <Footer />
       </body>

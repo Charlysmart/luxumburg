@@ -3,14 +3,14 @@ import { Globe, Mail, MapPin, Phone } from "lucide-react"
 const Footer = () => {
     return (
         <footer className="px-2">
-            <section className="bg-black text-white p-15 rounded-2xl">
-                <main className="flex justify-between *:w-1/3 mb-10">
+            <section className="bg-black text-white py-15 lg:px-15 px-2 rounded-2xl">
+                <main className="flex md:flex-row  gap-y-10 flex-col lg:text-[16px] text-[14px] justify-between *:md:w-1/3 mb-10">
                     <section>
                         <p>Welcome to De Luxumberg Hotels, a distinguished boutique hotel nestled within the prestigious Independence Layout, Enugu.</p>
                     </section>
                     <section className="space-y-5">
                         <p className="font-serif text-xl">Quick Links</p>
-                        <ul className="space-y-5">
+                        <ul className="space-y-5 *:hover:text-amber-400 *:cursor-pointer">
                             <li>About Us</li>
                             <li>Our Facilities</li>
                             <li>Gallery</li>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </ul>
                     </section>
                 </main>
-                <div className="pt-10 border-t border-t-gray-600">
+                <div className="pt-10 border-t border-t-gray-600 lg:text-[16px] text-[14px]">
                     <p className="text-center">Copyright {new Date().getFullYear()} - De Luxumberg Hotels. All Rights Reserved. </p>
                 </div>
             </section>

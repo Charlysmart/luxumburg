@@ -10,7 +10,8 @@ type RoomProp = {
     currency: string
     availability: string
     rating: string
-    features: string[],
+    description: string
+    features: string[]
     images: string[]
 }
 
