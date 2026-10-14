@@ -3,7 +3,7 @@ import Image from "next/image";
 import Usage from "./usage";
 
 export default async function Accomodation({params} : {params : Promise<{roomName : string}>}) {
-    const API_URL = process.env.NEXT_PUBLIC_API_URL;
+    const API_URL = process.env.API_URL;
     const roomName = (await params).roomName;
     const res = await fetch(`${API_URL}/data/hotelDetails.json`);
     const data = await res.json()

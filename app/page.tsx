@@ -5,7 +5,7 @@ import { BedDouble, Star, User } from "lucide-react";
 import Gallery from "./components/gallery";
 
 export default async function Home() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+  const API_URL = process.env.API_URL;
   const data = await fetch(`${API_URL}/data/hotelDetails.json`);
   const blogData = await fetch(`${API_URL}/data/hotelDetails.json`);
   const hotelData = await data.json();
