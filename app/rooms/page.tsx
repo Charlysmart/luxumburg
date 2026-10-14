@@ -2,7 +2,8 @@ import { BedDouble, User } from "lucide-react";
 import Image from "next/image";
 
 export default async function OurRooms () {
-    const data = await fetch("http://localhost:3000/data/hotelDetails.json");
+    const API_URL = process.env.NEXT_PUBLIC_API_URL;
+    const data = await fetch(`${API_URL}/data/hotelDetails.json`);
     const hotel = await data.json();
     const { rooms }: { rooms: RoomProp[] } = await hotel.hotel;
     return (

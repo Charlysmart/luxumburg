@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Button from "./components/button";
 import Slider from "./components/slider";
-import { BedDouble, Section, Star, User } from "lucide-react";
+import { BedDouble, Star, User } from "lucide-react";
 import Gallery from "./components/gallery";
 
 export default async function Home() {
-  const data = await fetch("http://localhost:3000/data/hotelDetails.json");
-  const blogData = await fetch("http://localhost:3000/data/blog.json");
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+  const data = await fetch(`${API_URL}/data/hotelDetails.json`);
+  const blogData = await fetch(`${API_URL}/data/hotelDetails.json`);
   const hotelData = await data.json();
   const blogResponse = await blogData.json();
   const { rooms } : { rooms: RoomProp[]} = hotelData.hotel;

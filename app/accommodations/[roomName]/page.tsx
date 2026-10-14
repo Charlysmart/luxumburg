@@ -3,8 +3,9 @@ import Image from "next/image";
 import Usage from "./usage";
 
 export default async function Accomodation({params} : {params : Promise<{roomName : string}>}) {
+    const API_URL = process.env.NEXT_PUBLIC_API_URL;
     const roomName = (await params).roomName;
-    const res = await fetch("http://localhost:3000/data/hotelDetails.json");
+    const res = await fetch(`${API_URL}/data/hotelDetails.json`);
     const data = await res.json()
     const {rooms }:{rooms: RoomProp[]} = data.hotel;
     const room = rooms.find(i => i.name.toLowerCase().split(" ").join("-") === roomName);
